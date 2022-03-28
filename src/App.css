@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400');
+html {
+  background-color: #1a1a1a;
+}
+.App {
+  text-align: center;
+  fill: white; 
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  background-color: #fff;
+  color: #000;
+  font-size: 22px;
+  /* font-family: "Comic Sans MS", "Comic Sans", cursive; */
+}
+
+.App-header {
+  /* background-color: #ffffff; */
+  min-height: 98vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 36px;
+  /* font-size: calc(10px + 2vmin); */
+  /* color: #000000; */
+}
+
+
+.Container {
+  max-width: 960px;
+  min-width: 640px;
+  min-height: 360px;
+  border-style: solid;
+  border-width: 7px;
+  border-color: #000000;
+  border-radius: 15px;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 400;
+  margin: 24px 0;
+}
+
+p {
+  margin: 0px 48px;
+  color: #8e8e8e;
+}
+
+.grid2x2{
+  justify-content: center;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 60px 60px;
+}
+
+.grid2x2 > div {
+  display: flex;
+  margin: 12px;
+  /* font-weight: bold; */
+  flex-basis: 200px;
+  font-size: 36px;
+  justify-content: center;
+  flex-direction: column;
+  border-style: solid;
+  border-width: thick;
+  border-color: #000000;
+  border-radius: 13px;
+  color: #000;
+  cursor: pointer;
+}
+
+
+
+@media (max-width: 660px) {
+  .App-header {
+    padding: 8px 36px;
+  }
+
+  .Container {
+    min-width: 100%;
+    min-height: 100%;
+  }
+  .grid2x2{
+    margin: 32px 32px;
+  }
+
+  .phantom {
+    display: none !important;
+  }
+
+  p {
+    margin: 0px 24px !important;
+  }
+}
